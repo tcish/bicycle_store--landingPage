@@ -23,6 +23,7 @@ html {
   border-radius: 10px;
   background: linear-gradient(to right, #141e30, #243b55);
   z-index: 10;
+  transition: all 1s;
 }
 
 .container .main__section .left__side .cycles {
@@ -105,10 +106,15 @@ html {
   color: #fff;
 }
 
+.container .main__section .right__side .navbar .toggle__close {
+  display: none;
+}
+
 .container .main__section .right__side .body {
   display: flex;
   justify-content: space-between;
   padding: 30px;
+  margin-top: 30px;
 }
 
 .container .main__section .right__side .body .body__title {
@@ -175,10 +181,27 @@ html {
 }
 
 .container .main__section .right__side .footer {
-  border-left: 1px solid #5f5656;
+  border-left: 1px solid #a79f9f;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
+}
+
+.container .main__section .right__side .footer .menu__btn {
+  color: #a79f9f;
+  margin-top: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: none;
+}
+
+.container .main__section .right__side .footer .menu__btn:hover {
+  color: #fff;
+}
+
+.container .main__section .right__side .footer .menu__btn i {
+  font-size: 2rem;
 }
 
 .container .main__section .right__side .footer ul {
